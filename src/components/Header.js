@@ -21,7 +21,7 @@ export default function Header() {
     // Initial call to set the screen width
     handleResize();
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', handleResize); 
 
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
