@@ -1,0 +1,22 @@
+.banner-wrap {
+  background-image: url(../img/banner-new.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: 1;
+  color: #F6F4EF;
+  text-align: center;
+  height: 100vh;
+}
+.banner-wrap .text-wrap {
+  padding-top: 246px;
+}
+.banner-wrap .text-wrap h1 {
+  font: normal normal normal 56px/64px Yeseva One;
+  margin: 0;
+}
+.banner-wrap .text-wrap p {
+  font: normal normal normal 22px/26px Raleway;
+  margin: 18px 0 0;
+}
