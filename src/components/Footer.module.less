@@ -39,15 +39,21 @@ footer {
         .social-media {
             a {
                 display: inline-block;
-                background-image: url('../img/social-media.png');
-                background-size: 79px;
+                background-position: center;
+                background-size: 45px;
+                filter: invert(100%);
                 width: 40px;
                 height: 40px; 
-                margin-right: 10px;
             }  
-            .instagram {
-                background-position-x: 40px;
+            .facebook {
+                background-image: url('../img/facebook-logo.svg');
+                margin-right: 5px;
             }
+            .instagram {
+                background-image: url('../img/instagram-logo.svg');
+                margin-left: 5px;
+            }
+
         }
     }
 }
@@ -58,8 +64,20 @@ footer {
         gap: 20px;
         div {
             width: 100%;
-            ul {
-            
+        }
+
+        ul {
+            li {
+                a {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+        .contacts {
+            .social-media {
+                margin-top: 20px;
+                text-align: center;
             }
         }
         

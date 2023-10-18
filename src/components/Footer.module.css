@@ -34,14 +34,19 @@ footer .logo-wrap path {
 }
 footer .contacts .social-media a {
   display: inline-block;
-  background-image: url('../img/social-media.png');
-  background-size: 79px;
+  background-position: center;
+  background-size: 45px;
+  filter: invert(100%);
   width: 40px;
   height: 40px;
-  margin-right: 10px;
+}
+footer .contacts .social-media .facebook {
+  background-image: url('../img/facebook-logo.svg');
+  margin-right: 5px;
 }
 footer .contacts .social-media .instagram {
-  background-position-x: 40px;
+  background-image: url('../img/instagram-logo.svg');
+  margin-left: 5px;
 }
 @media screen and (max-width: 640px) {
   footer {
@@ -49,6 +54,14 @@ footer .contacts .social-media .instagram {
   }
   footer div {
     width: 100%;
+  }
+  footer ul li a {
+    display: block;
+    text-align: center;
+  }
+  footer .contacts .social-media {
+    margin-top: 20px;
+    text-align: center;
   }
   footer .logo-wrap {
     padding: 0;

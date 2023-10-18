@@ -14,16 +14,18 @@
     .product-gallery-wrap {
         width: 60%;
         height: -webkit-fill-available;
-        position: relative;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
 
         .gallery-carousel {
             display: flex;
             display: -webkit-flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            position: absolute;
-            left: 8px;
-            height: 100%;
+            width: calc(20% - 10px);
             .carousel-img{
                 margin: 4px 0;
                 height: 25%;
@@ -39,7 +41,7 @@
             }
         }
         .main-img {
-            width: 100%;
+            width: 80%;
             aspect-ratio: 9 / 6;
             object-fit: cover; 
             border-radius: 8px;
@@ -89,6 +91,7 @@
             flex-wrap: nowrap;
             gap: 10px;
             .gallery-carousel {
+                width: 100%;
                 flex-direction: row;
                 flex-wrap: wrap;
                 position: relative;
@@ -98,6 +101,9 @@
                 .carousel-img{
                     width: calc(25% - 8px);
                 }
+            }
+            .main-img {
+                width: 100%;
             }
         }
     

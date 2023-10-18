@@ -36,13 +36,10 @@ export default function Header() {
     };
   }, []);
 
-  const headerStyle = {
-    backgroundColor: isScrolled ? 'rgba(0,0,0,0.4)' : '',
-    backdropFilter: isScrolled ? 'blur(1px)' : '',
-  };
+
   if (!isMobileDevice) {
     return (
-      <header className={styles['head-wrap sticky']} style={headerStyle}>
+      <header className={` ${isScrolled ? styles['isScrolled'] : ''}`}>
         <span><NavLink to="/boutique/" className={styles['head-btn']} activeclassname={styles['active']} >Бутикови мебели</NavLink></span>
         <span><NavLink to="/products/" className={styles['head-btn']} activeclassname={styles['active']}>Основи за маси</NavLink></span>
         <span><NavLink to="/" className={styles['logo']}><Logo className={styles['logo-path']}/></NavLink></span>

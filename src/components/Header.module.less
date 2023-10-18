@@ -12,7 +12,7 @@ header {
     height: 8vw;
     max-height: 150px;
     font: normal normal normal 26px/30px;
-
+    transition: background-color 300ms, height 300ms;
     span {
         width: 100%;
         text-align: center;
@@ -53,9 +53,6 @@ header {
             height: 0.08em;
             background-color: white;
             opacity: 1;
-            // transition: opacity 300ms, transform 300ms;
-            // transform: scale(0);
-            // transform-origin: center;
         }
     
         .logo {
@@ -69,6 +66,17 @@ header {
                 fill: white;
             }
         }
+    }
+}
+
+.isScrolled {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+    height: 5vw;
+    transition: background-color 300ms, height 300ms;
+    .logo-path {
+        height: 3.5vw;
+        transition: height 300ms;
     }
 }
 

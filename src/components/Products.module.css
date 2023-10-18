@@ -1,7 +1,7 @@
 .product-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, calc(25% - 10px)));
-  grid-gap: 10px;
+  grid-gap: 16px;
   justify-content: center;
   margin: 150px auto;
   width: 90%;
