@@ -5,7 +5,7 @@ export default function Banner() {
     <section className={styles["banner-wrap"]}>
       <div className={styles["text-wrap"]}>
         <h1>Black Steel</h1>
-        <p>Преосмисляме индустриалния живот</p>
+        <p>Rethinking industrial life</p>
       </div>
     </section>
   );

@@ -25,7 +25,7 @@ header span .head-btn {
   position: relative;
 }
 header span .head-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -43,7 +43,7 @@ header span .head-btn:hover::after {
   transform: scale(1);
 }
 header span .active {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -72,14 +72,24 @@ header span .logo path {
   transition: height 300ms;
 }
 @media screen and (max-width: 640px) {
+  .logo-mobile {
+    display: block;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 0 auto;
+  }
   .logo-mobile svg {
     width: 15vw;
     max-width: 10vw;
     height: 15vw;
     max-height: 50px;
     position: absolute;
-    left: calc(50% - 7.5vw);
-    top: 30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 50px;
   }
   .logo-mobile path {
     fill: white;
