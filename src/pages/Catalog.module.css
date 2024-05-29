@@ -1,0 +1,25 @@
+.err-message {
+  padding: 0 40px;
+}
+.product-section h2 {
+  font: normal normal normal 56px/64px Yeseva One;
+  color: #F6F4EF;
+  padding-top: 240px;
+  text-align: center;
+}
+.loading-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.loading-wrapper h2 {
+  margin-bottom: 150px;
+}
+.loading-wrapper svg {
+  width: calc(25% - 8px);
+  margin: 0 4px;
+}
+@media screen and (max-width: 640px) {
+  .product-section h2 {
+    padding-top: 140px;
+  }
+}
