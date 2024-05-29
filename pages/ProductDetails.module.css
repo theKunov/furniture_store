@@ -1,0 +1,109 @@
+.message {
+  padding: 240px 0 0 40px;
+}
+.product-section {
+  padding: 240px 0 100px 0;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1440px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.product-section .product-gallery-wrap {
+  width: 60%;
+  height: -webkit-fill-available;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.product-section .product-gallery-wrap .gallery-carousel {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: calc(20% - 10px);
+}
+.product-section .product-gallery-wrap .gallery-carousel .carousel-img {
+  margin: 4px 0;
+  height: 25%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+.product-section .product-gallery-wrap .gallery-carousel .carousel-img:first-child,
+.product-section .product-gallery-wrap .gallery-carousel .carousel-img:last-child {
+  margin: 4px 0 8px 0;
+}
+.product-section .product-gallery-wrap .main-img {
+  width: 80%;
+  aspect-ratio: 9 / 6;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.product-section .info-wrap {
+  width: 40%;
+  padding: 0 clamp(15px, 7%, 130px);
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.product-section .info-wrap .info-headline {
+  font-family: Yeseva One;
+  font-size: 38px;
+}
+.product-section .info-wrap .size {
+  font: normal normal normal 18px/26px Raleway;
+  margin-bottom: 25px;
+}
+.product-section .info-wrap .description {
+  font: normal normal normal 16px/26px Raleway;
+  margin-bottom: 48px;
+}
+.product-section .info-wrap .price {
+  font-family: Yeseva One;
+  font-size: 32px;
+}
+@media screen and (max-width: 640px) {
+  .product-section {
+    padding: 100px 0 80px 0;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 95%;
+  }
+  .product-section .product-gallery-wrap {
+    width: 100%;
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  .product-section .product-gallery-wrap .gallery-carousel {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    order: 2;
+    gap: 10px;
+    left: 0;
+  }
+  .product-section .product-gallery-wrap .gallery-carousel .carousel-img {
+    width: calc(25% - 8px);
+  }
+  .product-section .product-gallery-wrap .main-img {
+    width: 100%;
+  }
+  .product-section .info-wrap {
+    width: 100%;
+    padding: 0;
+  }
+}
